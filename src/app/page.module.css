@@ -16,7 +16,7 @@
   flex-direction: column;
   cursor: pointer;
   bottom: -6rem;
-  left: 30%;
+  left: 40%;
 }
 
 .background {
@@ -67,4 +67,8 @@
   font-size: 10px;}
 .advice {
   font-size: 20px;}
+}
+.btn{
+  background: none;
+  border: none;
 }

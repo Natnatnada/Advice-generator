@@ -14,6 +14,7 @@ export default function AdviceCard() {
             .then(
                 (quote) => {
                     // console.log(quote)
+                    //set the id to get the quote
                     setQuote(quote.slip.advice);
                     setNumberQuote(quote.slip.id)
                 })
@@ -21,7 +22,7 @@ export default function AdviceCard() {
                 console.log(error);
             });
     })
-    
+
     return (
         <div className={page.background}>
             <div className='card'>
@@ -29,10 +30,8 @@ export default function AdviceCard() {
                 <h3 className={page.Advice} > {quote}</h3>
                 <div className={page.divider}></div>
                 <div className={page.dicedivider}>
-                    <Image src={require('.//images/icon-dice.svg')} alt='dice-divider'
-
-
-                    />
+                    <button className={page.btn}>  <Image src={require('.//images/icon-dice.svg')} alt='dice-divider'
+                    /></button>
                 </div>
             </div>
         </div>
