@@ -22,15 +22,30 @@ export default function AdviceCard() {
                 console.log(error);
             });
     })
+    const changeQuote = () => {
+        fetch('https://api.adviceslip.com/advice')
+            .then(response => response.json())
+            .then(
+                (quote) => {
+                    // console.log(quote)
+                    //set the id to get the quote
+                    setQuote(quote.slip.advice);
+                    setNumberQuote(quote.slip.id)
+                })
+            .catch(error => {
+                console.log(error);
+            });
+    }
 
     return (
         <div className={page.background}>
             <div className='card'>
                 <h2 className={page.numberadvice} >ADVICE N° {numberQuote} </h2>
-                <h3 className={page.Advice} > {quote}</h3>
+                <h3 className={page.Advice} > {quote} </h3>
                 <div className={page.divider}></div>
+                <div className={page.line}></div>
                 <div className={page.dicedivider}>
-                    <button className={page.btn}>  <Image src={require('.//images/icon-dice.svg')} alt='dice-divider'
+                    <button className={page.btn} onClick={changeQuote}>  <Image src={require('.//images/icon-dice.svg')} alt='dice-divider'
                     /></button>
                 </div>
             </div>
