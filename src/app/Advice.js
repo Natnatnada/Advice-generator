@@ -49,6 +49,7 @@ export default function AdviceCard() {
                     /></button>
                 </div>
             </div>
+            
         </div>
     )
 }

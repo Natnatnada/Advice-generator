@@ -17,7 +17,7 @@
   cursor: pointer;
   bottom: -6rem;
   left: 40%;
-  
+
 }
 
 .background {
@@ -32,7 +32,7 @@
   font-family: 'Manrope', sans-serif;
   position: relative;
   margin: 20%;
-  }
+}
 
 .dicedivider:hover {
   transform: translateY(-3px);
@@ -52,6 +52,8 @@
   color: hsl(150, 100%, 66%);
   margin-bottom: 5px;
   letter-spacing: 3px;
+
+  justify-content: center;
 }
 
 .advice {
@@ -62,21 +64,28 @@
   font-weight: 800;
   text-align: justify;
 }
-.line{
+
+.line {
   padding-top: 10px;
-    border-bottom: 2px solid #5a5e5e;
-    /* margin: 2px 0; */
-  }
-.btn{
+  border-bottom: 2px solid #5a5e5e;
+  /* margin: 2px 0; */
+}
+
+.btn {
   background: none;
   border: none;
 }
+
 @media (max-width: 375px) {
   .background {
     width: 90%;
   }
-.numberadvice {
-  font-size: 10px;}
-.advice {
-  font-size: 20px;}
+
+  .numberadvice {
+    font-size: 10px;
+  }
+
+  .advice {
+    font-size: 20px;
+  }
 }
