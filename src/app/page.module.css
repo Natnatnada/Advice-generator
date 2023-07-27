@@ -76,6 +76,23 @@
   border: none;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: hsl(223, 3%, 42%);
+  text-align: center;
+  color: rgb(244, 245, 247);
+  padding: 1.5rem;
+  text-decoration: none;
+}
+
+.a:active {
+  color: rgb(145, 148, 155);
+
+}
+
 @media (max-width: 375px) {
   .background {
     width: 90%;

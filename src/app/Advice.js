@@ -38,6 +38,7 @@ export default function AdviceCard() {
     }
 
     return (
+        <>
         <div className={page.background}>
             <div className='card'>
                 <h2 className={page.numberadvice} >ADVICE N° {numberQuote} </h2>
@@ -49,7 +50,13 @@ export default function AdviceCard() {
                     /></button>
                 </div>
             </div>
-            
         </div>
-    )
+            <footer>
+                <p className={page.footer}>
+                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                    Coded by <a href="https://github.com/Natnatnada">Natalia A</a>.
+                </p>
+            </footer>
+        </>
+            )
 }
